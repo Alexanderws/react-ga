@@ -65,7 +65,7 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: npx codecov
       - name: Open issue
-        if: failure() && github.event_name = 'push'
+        if: failure() && github.event_name == 'push'
         run: |
           curl --request POST \
           --url https://api.github.com/repos/${{ github.repository }}/issues \
