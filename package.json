@@ -24,11 +24,6 @@
     "format:check": "prettier --check \"**/*.{tsx,yml,html,js,json,css,scss}\"",
     "format": "prettier --write \"**/*.{tsx,yml,html,js,json,css,scss}\""
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
